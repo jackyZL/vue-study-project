@@ -1,38 +1,38 @@
 vue:
-	¶ÁÒô:	v-u-e
+	è¯»éŸ³:	v-u-e
 	view
 
-	vueµ½µ×ÊÇÊ²Ã´?
-		Ò»¸ömvvm¿ò¼Ü(¿â)¡¢ºÍangularÀàËÆ
-		±È½ÏÈİÒ×ÉÏÊÖ¡¢Ğ¡ÇÉ
+	vueåˆ°åº•æ˜¯ä»€ä¹ˆ?
+		ä¸€ä¸ªmvvmæ¡†æ¶(åº“)ã€å’Œangularç±»ä¼¼
+		æ¯”è¾ƒå®¹æ˜“ä¸Šæ‰‹ã€å°å·§
 	mvc:
 		mvp
 		mvvm
 		mv*
 		mvx
-	¹ÙÍø:http://cn.vuejs.org/	
-	ÊÖ²á£º http://cn.vuejs.org/api/
+	å®˜ç½‘:http://cn.vuejs.org/
+	æ‰‹å†Œï¼š http://cn.vuejs.org/api/
 
-vueºÍangularÇø±ğ?
-	vue¡ª¡ª¼òµ¥¡¢Ò×Ñ§
-		Ö¸ÁîÒÔ v-xxx
-		Ò»Æ¬html´úÂëÅäºÏÉÏjson£¬ÔÚnew³öÀ´vueÊµÀı
-		¸öÈËÎ¬»¤ÏîÄ¿
+vueå’ŒangularåŒºåˆ«?
+	vueâ€”â€”ç®€å•ã€æ˜“å­¦
+		æŒ‡ä»¤ä»¥ v-xxx
+		ä¸€ç‰‡htmlä»£ç é…åˆä¸Šjsonï¼Œåœ¨newå‡ºæ¥vueå®ä¾‹
+		ä¸ªäººç»´æŠ¤é¡¹ç›®
 
-		ÊÊºÏ: ÒÆ¶¯¶ËÏîÄ¿,Ğ¡ÇÉ
+		é€‚åˆ: ç§»åŠ¨ç«¯é¡¹ç›®,å°å·§
 
-		vueµÄ·¢Õ¹ÊÆÍ·ºÜÃÍ£¬githubÉÏstartÊıÁ¿ÒÑ¾­³¬Ô½angular
-	angular¡ª¡ªÉÏÊÖÄÑ
-		Ö¸ÁîÒÔ ng-xxx
-		ËùÓĞÊôĞÔºÍ·½·¨¶¼¹Òµ½$scopeÉíÉÏ
-		angularÓÉgoogleÎ¬»¤
-		
-		ºÏÊÊ: pc¶ËÏîÄ¿
+		vueçš„å‘å±•åŠ¿å¤´å¾ˆçŒ›ï¼Œgithubä¸Šstartæ•°é‡å·²ç»è¶…è¶Šangular
+	angularâ€”â€”ä¸Šæ‰‹éš¾
+		æŒ‡ä»¤ä»¥ ng-xxx
+		æ‰€æœ‰å±æ€§å’Œæ–¹æ³•éƒ½æŒ‚åˆ°$scopeèº«ä¸Š
+		angularç”±googleç»´æŠ¤
 
-	¹²Í¬µã: ²»¼æÈİµÍ°æ±¾IE
+		åˆé€‚: pcç«¯é¡¹ç›®
+
+	å…±åŒç‚¹: ä¸å…¼å®¹ä½ç‰ˆæœ¬IE
 -------------------------------------------
-vue»ù±¾³ûĞÎ:
-	angularÕ¹Ê¾Ò»Ìõ»ù±¾Êı¾İ:
+vueåŸºæœ¬é›å½¢:
+	angularå±•ç¤ºä¸€æ¡åŸºæœ¬æ•°æ®:
 		var app=angular.module('app',[]);
 
 		app.controller('xxx',function($scope){	//C
@@ -49,157 +49,157 @@ vue»ù±¾³ûĞÎ:
 			</div>
 
 			var c=new Vue({
-				el:'#box',	//Ñ¡ÔñÆ÷  class tagName
+				el:'#box',	//é€‰æ‹©å™¨  class tagName
 				data:{
 				    msg:'welcome vue'
 				}
 			});
-³£ÓÃÖ¸Áî:
-	angular: 
+å¸¸ç”¨æŒ‡ä»¤:
+	angular:
 		 ng-model   ng-controller
 		 ng-repeat
 		 ng-click
-		 ng-show  
+		 ng-show
 
 		$scope.show=function(){}
-	Ö¸Áî: À©Õ¹html±êÇ©¹¦ÄÜ,ÊôĞÔ
+	æŒ‡ä»¤: æ‰©å±•htmlæ ‡ç­¾åŠŸèƒ½,å±æ€§
 
-	v-model	Ò»°ã±íµ¥ÔªËØ(input)	Ë«ÏòÊı¾İ°ó¶¨
+	v-model	ä¸€èˆ¬è¡¨å•å…ƒç´ (input)	åŒå‘æ•°æ®ç»‘å®š
 
-	Ñ­»·:
+	å¾ªç¯:
 		v-for="name in arr"
 			{{$index}}
 
 		v-for="name in json"
 			{{$index}}	{{$key}}
-	
+
 		v-for="(k,v) in json"
-	ÊÂ¼ş:
-		v-on:click="º¯Êı"
+	äº‹ä»¶:
+		v-on:click="å‡½æ•°"
 
 		v-on:click/mouseout/mouseover/dblclick/mousedown.....
 
 		new Vue({
 			el:'#box',
-			data:{ //Êı¾İ
+			data:{ //æ•°æ®
 			    arr:['apple','banana','orange','pear'],
 			    json:{a:'apple',b:'banana',c:'orange'}
 			},
 			methods:{
-			    show:function(){	//·½·¨
+			    show:function(){	//æ–¹æ³•
 			        alert(1);
 			    }
 			}
 		});
-	ÏÔÊ¾Òş²Ø:
-		v-show=¡°true/false¡±
-bootstrap+vue¼òÒ×ÁôÑÔ°å(todolist):
-	
-	bootstrap: css¿ò¼Ü	¸újqueryMobileÒ»Ñù
-		Ö»ĞèÒª¸ø±êÇ© ¸³Óèclass£¬½ÇÉ«
-		ÒÀÀµjquery
+	æ˜¾ç¤ºéšè—:
+		v-show=â€œtrue/falseâ€
+bootstrap+vueç®€æ˜“ç•™è¨€æ¿(todolist):
 
-	È·ÈÏÉ¾³ı£¿ºÍÈ·ÈÏÉ¾³ıÈ«²¿Ã´?
+	bootstrap: cssæ¡†æ¶	è·ŸjqueryMobileä¸€æ ·
+		åªéœ€è¦ç»™æ ‡ç­¾ èµ‹äºˆclassï¼Œè§’è‰²
+		ä¾èµ–jquery
+
+	ç¡®è®¤åˆ é™¤ï¼Ÿå’Œç¡®è®¤åˆ é™¤å…¨éƒ¨ä¹ˆ?
 -----------------------------------------
-ÊÂ¼ş:
+äº‹ä»¶:
 	v-on:click/mouseover......
-	
-	¼òĞ´µÄ:
-	@click=""		ÍÆ¼ö
 
-	ÊÂ¼ş¶ÔÏó:
+	ç®€å†™çš„:
+	@click=""		æ¨è
+
+	äº‹ä»¶å¯¹è±¡:
 		@click="show($event)"
-	ÊÂ¼şÃ°Åİ:
-		×èÖ¹Ã°Åİ:  
+	äº‹ä»¶å†’æ³¡:
+		é˜»æ­¢å†’æ³¡:
 			a). ev.cancelBubble=true;
-			b). @click.stop	ÍÆ¼ö
-	Ä¬ÈÏĞĞÎª(Ä¬ÈÏÊÂ¼ş):
-		×èÖ¹Ä¬ÈÏĞĞÎª:
+			b). @click.stop	æ¨è
+	é»˜è®¤è¡Œä¸º(é»˜è®¤äº‹ä»¶):
+		é˜»æ­¢é»˜è®¤è¡Œä¸º:
 			a). ev.preventDefault();
-			b). @contextmenu.prevent	ÍÆ¼ö
-	¼üÅÌ:
+			b). @contextmenu.prevent	æ¨è
+	é”®ç›˜:
 		@keydown	$event	ev.keyCode
 		@keyup
 
-		³£ÓÃ¼ü:
-			»Ø³µ
+		å¸¸ç”¨é”®:
+			å›è½¦
 				a). @keyup.13
 				b). @keyup.enter
-			ÉÏ¡¢ÏÂ¡¢×ó¡¢ÓÒ
+			ä¸Šã€ä¸‹ã€å·¦ã€å³
 				@keyup/keydown.left
 				@keyup/keydown.right
 				@keyup/keydown.up
 				@keyup/keydown.down
 			.....
 -----------------------------------------
-ÊôĞÔ:
+å±æ€§:
 	v-bind:src=""
 		width/height/title....
-	
-	¼òĞ´:
-	:src=""	ÍÆ¼ö
 
-	<img src="{{url}}" alt="">	Ğ§¹ûÄÜ³öÀ´£¬µ«ÊÇ»á±¨Ò»¸ö404´íÎó
-	<img v-bind:src="url" alt="">	Ğ§¹û¿ÉÒÔ³öÀ´£¬²»»á·¢404ÇëÇó£¬ÕâÀï²»ĞèÒª¼Ó"{{}}"»¨À¨ºÅ
+	ç®€å†™:
+	:src=""	æ¨è
+
+	<img src="{{url}}" alt="">	æ•ˆæœèƒ½å‡ºæ¥ï¼Œä½†æ˜¯ä¼šæŠ¥ä¸€ä¸ª404é”™è¯¯
+	<img v-bind:src="url" alt="">	æ•ˆæœå¯ä»¥å‡ºæ¥ï¼Œä¸ä¼šå‘404è¯·æ±‚ï¼Œè¿™é‡Œä¸éœ€è¦åŠ "{{}}"èŠ±æ‹¬å·
 -----------------------------------------
-classºÍstyle:
+classå’Œstyle:
 	:class=""	v-bind:class=""
 	:style=""	v-bind:style=""
 
-	:class="[red]"	redÊÇdataÊı¾İÖĞµÄÊı¾İ
+	:class="[red]"	redæ˜¯dataæ•°æ®ä¸­çš„æ•°æ®
 	:class="[red,b,c,d]"
-	
-	:class="{red:a, blue:false}"  aÊÇdataÖĞµÄÊı¾İ
+
+	:class="{red:a, blue:false}"  aæ˜¯dataä¸­çš„æ•°æ®
 
 	:class="json"
-		
+
 		data:{
 			json:{red:a, blue:false}
 		}
 	--------------------------
-	style:  (×¢Òâ£ºÒ»¶¨¶ÔÓ¦µÄÊÇjsonĞÎÊ½µÄÊı¾İ)
-	:style="[c]" cÊÇdataÖĞµÄÊı¾İ£¬²»¹ıÒ»¶¨¶ÔÓ¦µÄÊÇjsonĞÎÊ½µÄÊı¾İ
+	style:  (æ³¨æ„ï¼šä¸€å®šå¯¹åº”çš„æ˜¯jsonå½¢å¼çš„æ•°æ®)
+	:style="[c]" cæ˜¯dataä¸­çš„æ•°æ®ï¼Œä¸è¿‡ä¸€å®šå¯¹åº”çš„æ˜¯jsonå½¢å¼çš„æ•°æ®
 	:style="[c,d]"
-		×¢Òâ:  ¸´ºÏÑùÊ½£¬²ÉÓÃÍÕ·åÃüÃû·¨
+		æ³¨æ„:  å¤åˆæ ·å¼ï¼Œé‡‡ç”¨é©¼å³°å‘½åæ³•
 	:style="json"
 -----------------------------------------
-Ä£°å:
-	{{msg}}		Êı¾İ¸üĞÂÄ£°å±ä»¯
-	{{*msg}}	Êı¾İÖ»°ó¶¨Ò»´Î,Êı¾İ¸üĞÂºó£¬Ä£°å²»ÔÙ±ä»¯
-	
-	{{{msg}}}	HTML×ªÒâÊä³ö
+æ¨¡æ¿:
+	{{msg}}		æ•°æ®æ›´æ–°æ¨¡æ¿å˜åŒ–
+	{{*msg}}	æ•°æ®åªç»‘å®šä¸€æ¬¡,æ•°æ®æ›´æ–°åï¼Œæ¨¡æ¿ä¸å†å˜åŒ–
+
+	{{{msg}}}	HTMLè½¬æ„è¾“å‡º
 -----------------------------------------
-¹ıÂËÆ÷:-> ¹ıÂËÄ£°åÊı¾İ
-	ÏµÍ³Ìá¹©Ò»Ğ©¹ıÂËÆ÷:
-	
+è¿‡æ»¤å™¨:-> è¿‡æ»¤æ¨¡æ¿æ•°æ®
+	ç³»ç»Ÿæä¾›ä¸€äº›è¿‡æ»¤å™¨:
+
 	{{msg| filterA}}
 	{{msg| filterA | filterB}}
 
 	uppercase	eg:	{{'welcome'| uppercase}}
 	lowercase
-	capitalize  Ê××ÖÄ¸´óĞ´
+	capitalize  é¦–å­—æ¯å¤§å†™
 
-	currency	Ç®
+	currency	é’±
 
-	{{msg| filterA ²ÎÊı}} ¸øfilter´«µİµÄ²ÎÊı
+	{{msg| filterA å‚æ•°}} ç»™filterä¼ é€’çš„å‚æ•°
 
 	....
 -----------------------------------------
-½»»¥:
-	$http	£¨ajax£©
+äº¤äº’:
+	$http	ï¼ˆajaxï¼‰
 
-	Èç¹ûvueÏë×ö½»»¥
+	å¦‚æœvueæƒ³åšäº¤äº’
 
-	ÒıÈë: vue-resouce
+	å¼•å…¥: vue-resouce
 
 	get:
-		»ñÈ¡Ò»¸öÆÕÍ¨ÎÄ±¾Êı¾İ:
+		è·å–ä¸€ä¸ªæ™®é€šæ–‡æœ¬æ•°æ®:
 		this.$http.get('aa.txt').then(function(res){
 		    alert(res.data);
 		},function(res){
 		    alert(res.status);
 		});
-		¸ø·şÎñ·¢ËÍÊı¾İ:¡Ì
+		ç»™æœåŠ¡å‘é€æ•°æ®:âˆš
 		this.$http.get('get.php',{
 		    a:1,
 		    b:2
@@ -213,59 +213,59 @@ classºÍstyle:
 		    a:1,
 		    b:20
 		},{
-		    emulateJSON:true  // Õâ¸ö²ÎÊı²»ÄÜÉÙ~
+		    emulateJSON:true  // è¿™ä¸ªå‚æ•°ä¸èƒ½å°‘~
 		}).then(function(res){
 		    alert(res.data);
 		},function(res){
 		    alert(res.status);
 		});
 	jsonp:
-		https://sug.so.360.cn/suggest?callback=suggest_so&word=a  
+		https://sug.so.360.cn/suggest?callback=suggest_so&word=a
 
 		https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su?wd=a&cb=jshow
 
 		this.$http.jsonp('https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su',{
 		    wd:'a'
 		},{
-		    jsonp:'cb'	//callbackÃû×Ö£¬Ä¬ÈÏÃû×Ö¾ÍÊÇ"callback"
+		    jsonp:'cb'	//callbackåå­—ï¼Œé»˜è®¤åå­—å°±æ˜¯"callback"
 		}).then(function(res){
 		    alert(res.data.s);
 		},function(res){
 		    alert(res.status);
 		});
-		
+
 https://www.baidu.com/s?wd=s
 
-	×÷Òµ:
-		1. ¼òÒ×ÁôÑÔ-> È·ÈÏÉ¾³ı? È·ÈÏÉ¾³ıÈ«²¿
-		2. ÓÃvue get Ğ´¸öÀı×Ó	weibo
-
-
-	
-	
-		
-	
-	
-
-	
-	
-
-		
-
-	
-	
-	
-		
-
-	
-	
-	
-
-	
+	ä½œä¸š:
+		1. ç®€æ˜“ç•™è¨€-> ç¡®è®¤åˆ é™¤? ç¡®è®¤åˆ é™¤å…¨éƒ¨
+		2. ç”¨vue get å†™ä¸ªä¾‹å­	weibo
 
 
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

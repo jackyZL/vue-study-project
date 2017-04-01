@@ -9,8 +9,8 @@
 </head>
 <body>
 	<div id="box">
-		<aaa>
-		</aaa>
+		<aaa></aaa>
+		<br>
 	</div>
 
 	<script>
@@ -21,10 +21,10 @@
 			},
 			components:{
 				'aaa':{
-					template:'<h2>我是aaa组件</h2><bbb></bbb>',
+					template:'<h2>我是aaa父组件</h2><bbb></bbb>',  /* 这里的bbb只能在父组件中使用 */
 					components:{
 						'bbb':{
-							template:'<h3>我是bbb组件</h3>'
+							template:'<h3>我是bbb子组件</h3>'
 						}
 					}
 				}

@@ -18,7 +18,7 @@
     <div id="box">
         <input type="text" v-model="a">
         <ul>
-            <li v-for="val in arr | filterBy a">
+            <li v-for="val in arr | filterBy a">  <!-- 通过输入过滤 -->
                 {{val}}
             </li>
         </ul>

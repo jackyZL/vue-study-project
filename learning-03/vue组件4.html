@@ -12,8 +12,10 @@
 		<my-aaa></my-aaa>
 	</div>
 
+	<div><my-aa></my-aa></div>
+
 	<script>
-		var Aaa=Vue.extend({
+		var Aaa=Vue.extend({  // 定义组件
 			template:'<h3>{{msg}}</h3>',
 			data(){
 				return {
@@ -28,7 +30,7 @@
 			data:{
 				bSign:true
 			},
-			components:{ //局部组件
+			components:{ //注册组件
 				'my-aaa':Aaa
 			}
 		});

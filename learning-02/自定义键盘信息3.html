@@ -15,8 +15,7 @@
         /*document.onkeydown=function(ev){
             console.log(ev.keyCode);
         };*/
-        Vue.directive('on').keyCodes.ctrl=17;  //
-
+        Vue.directive('on').keyCodes.ctrl=17;  // vue 默认是没有ctrl 这个事件响应的，需要而外绑定
 
         window.onload=function(){
             var vm=new Vue({
@@ -36,7 +35,7 @@
 </head>
 <body>
     <div id="box">
-        <input type="text" @keydown.ctrl="show">
+        <input type="text" @keydown.ctrl="show"> <!-- vue 默认是没有ctrl 这个事件响应的，需要而外绑定 -->
     </div>
 
 </body>

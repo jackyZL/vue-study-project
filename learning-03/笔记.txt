@@ -1,7 +1,7 @@
-git page£º
-	ÈÎºÎ²Ö¿â master·ÖÖ§£¬¶¼¿ÉÒÔ·¢²¼(git page)
+git pageï¼š
+	ä»»ä½•ä»“åº“ masteråˆ†æ”¯ï¼Œéƒ½å¯ä»¥å‘å¸ƒ(git page)
 -------------------------------------
-Ë«Ïò¹ıÂËÆ÷:
+åŒå‘è¿‡æ»¤å™¨:
 	Vue.filter(name,{
 		read:
 		write:
@@ -10,84 +10,86 @@ git page£º
 1.0
 2.0
 -------------------------------------
-ÒıÈë vue.js
+å¼•å…¥ vue.js
 -------------------------------------
-bower-> £¨Ç°¶Ë£©°ü¹ÜÀíÆ÷
+bower-> ï¼ˆå‰ç«¯ï¼‰åŒ…ç®¡ç†å™¨
 	npm install bower -g
-		ÑéÖ¤: bower --version
+		éªŒè¯: bower --version
 
-bower install <°üÃû>  £¬  bower install °üÃû#°æ±¾ºÅ  ¿ÉÒÔÖ¸¶¨°²×°Ä³Ò»¸ö°æ±¾
-bower uninstall <°üÃû>
-bower info <°üÃû>	²é¿´°ü°æ±¾ĞÅÏ¢
+bower install <åŒ…å>  ï¼Œ  bower install åŒ…å#ç‰ˆæœ¬å·  å¯ä»¥æŒ‡å®šå®‰è£…æŸä¸€ä¸ªç‰ˆæœ¬
+bower uninstall <åŒ…å>
+bower info <åŒ…å>	æŸ¥çœ‹åŒ…ç‰ˆæœ¬ä¿¡æ¯
 
 <script src="bower_components/vue/dist/vue.js"></script>
 -------------------------------------
-vue-> ¹ı¶É(¶¯»­)
-	±¾ÖÊ×ßµÄcss3: transtion ,animation
+vue-> è¿‡æ¸¡(åŠ¨ç”»)
+	æœ¬è´¨èµ°çš„css3: transtion ,animation
 
 	<div id="div1" v-show="bSign" transition="fade"></div>
 
-	¶¯»­:
+	åŠ¨ç”»:
 		.fade-transition{
-			
+
 		}
-		½øÈë£º
+		è¿›å…¥ï¼š
 		.fade-enter{
 			opacity: 0;
 		}
-		Àë¿ª£º
+		ç¦»å¼€ï¼š
 		.fade-leave{
 			opacity: 0;
 			transform: translateX(200px);
 		}
 	----------------------------------------
-vue×é¼ş:
-	×é¼ş: Ò»¸ö´ó¶ÔÏó
-¶¨ÒåÒ»¸ö×é¼ş:
-1. È«¾Ö×é¼ş
+vueç»„ä»¶:
+	ç»„ä»¶: ä¸€ä¸ªå¤§å¯¹è±¡
+å®šä¹‰ä¸€ä¸ªç»„ä»¶:
+1. å…¨å±€ç»„ä»¶
 var Aaa=Vue.extend({
-	template:'<h3>ÎÒÊÇ±êÌâ3</h3>'
+	template:'<h3>æˆ‘æ˜¯æ ‡é¢˜3</h3>'
 });
 
-Vue.component('aaa',Aaa); 
+Vue.component('aaa',Aaa);
 
-	*×é¼şÀïÃæ·ÅÊı¾İ:
-		data±ØĞëÊÇº¯ÊıµÄĞÎÊ½£¬º¯Êı±ØĞë·µ»ØÒ»¸ö¶ÔÏó(json)
-2. ¾Ö²¿×é¼ş
-	·Åµ½Ä³¸ö×é¼şÄÚ²¿
+	*ç»„ä»¶é‡Œé¢æ”¾æ•°æ®:
+		dataå¿…é¡»æ˜¯å‡½æ•°çš„å½¢å¼ï¼Œå‡½æ•°å¿…é¡»è¿”å›ä¸€ä¸ªå¯¹è±¡(json)
+2. å±€éƒ¨ç»„ä»¶
+	æ”¾åˆ°æŸä¸ªç»„ä»¶å†…éƒ¨
 var vm=new Vue({
 	el:'#box',
 	data:{
 		bSign:true
 	},
-	components:{ //¾Ö²¿×é¼ş£¬ÔÚÕâÀï±íÊ¾£¬Ö»ÄÜÔÚ#boxÀïÃæ²ÅÄÜÊ¹ÓÃ£¬ÍâÃæÊ¹ÓÃ²»ÁË£¬ÒªÓÃÈ«¾Ö×é¼ş
+	components:{ //å±€éƒ¨ç»„ä»¶ï¼Œåœ¨è¿™é‡Œè¡¨ç¤ºï¼Œåªèƒ½åœ¨#boxé‡Œé¢æ‰èƒ½ä½¿ç”¨ï¼Œå¤–é¢ä½¿ç”¨ä¸äº†ï¼Œè¦ç”¨å…¨å±€ç»„ä»¶
 		aaa:Aaa
 	}
 });
 --------------------------------------
-ÁíÒ»ÖÖ±àĞ´·½Ê½:
+å¦ä¸€ç§ç¼–å†™æ–¹å¼:
 	Vue.component('my-aaa',{
-		template:'<strong>ºÃ</strong>'
+		template:'<strong>å¥½</strong>'
 	});
+
+    æˆ–è€…
 
 	var vm=new Vue({
 		el:'#box',
 		components:{
 			'my-aaa':{
-				template:'<h2>±êÌâ2</h2>'
+				template:'<h2>æ ‡é¢˜2</h2>'
 			}
 		}
 	});
 -----------------------------------
-ÅäºÏÄ£°å:
-	1. template:'<h2 @click="change">±êÌâ2->{{msg}}</h2>'
+é…åˆæ¨¡æ¿:
+	1. template:'<h2 @click="change">æ ‡é¢˜2->{{msg}}</h2>'
 
-	2. µ¥¶À·Åµ½Ä³¸öµØ·½
+	2. å•ç‹¬æ”¾åˆ°æŸä¸ªåœ°æ–¹
 		a). <script type="x-template" id="aaa">
-			<h2 @click="change">±êÌâ2->{{msg}}</h2>
+			<h2 @click="change">æ ‡é¢˜2->{{msg}}</h2>
 		</script>
 		b). <template id="aaa">
-			<h1>±êÌâ1</h1>
+			<h1>æ ‡é¢˜1</h1>
 			<ul>
 				<li v-for="val in arr">
 					{{val}}
@@ -95,80 +97,80 @@ var vm=new Vue({
 			</ul>
 		</template>
 -----------------------------------
-¶¯Ì¬×é¼ş:
-	<component :is="×é¼şÃû³Æ"></component>
+åŠ¨æ€ç»„ä»¶:
+	<component :is="ç»„ä»¶åç§°"></component>
 --------------------------------------------
-vue-devtools	->  µ÷ÊÔ¹¤¾ß
+vue-devtools	->  è°ƒè¯•å·¥å…·
 	https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd
 --------------------------------------------
-vueÄ¬ÈÏÇé¿öÏÂ£¬×Ó×é¼şÒ²Ã»·¨·ÃÎÊ¸¸×é¼şÊı¾İ
+vueé»˜è®¤æƒ…å†µä¸‹ï¼Œå­ç»„ä»¶ä¹Ÿæ²¡æ³•è®¿é—®çˆ¶ç»„ä»¶æ•°æ®
 
 --------------------------------------------
-×é¼şÊı¾İ´«µİ:	¡Ì
-1. ×Ó×é¼ş¾ÍÏë»ñÈ¡¸¸×é¼şdata
-	ÔÚµ÷ÓÃ×Ó×é¼ş£º
-		<bbb :m="Êı¾İ"></bbb>
+ç»„ä»¶æ•°æ®ä¼ é€’:	âˆš
+1. å­ç»„ä»¶å°±æƒ³è·å–çˆ¶ç»„ä»¶data
+	åœ¨è°ƒç”¨å­ç»„ä»¶ï¼š
+		<bbb :m="æ•°æ®"></bbb>
 
-	×Ó×é¼şÖ®ÄÚ:
+	å­ç»„ä»¶ä¹‹å†…:
 		props:['m','myMsg']
 
 		props:{
 			'm':String,
 			'myMsg':Number
 		}
-2. ¸¸¼¶»ñÈ¡×Ó¼¶Êı¾İ
-	*×Ó×é¼ş°Ñ×Ô¼ºµÄÊı¾İ£¬·¢ËÍµ½¸¸¼¶
+2. çˆ¶çº§è·å–å­çº§æ•°æ®
+	*å­ç»„ä»¶æŠŠè‡ªå·±çš„æ•°æ®ï¼Œå‘é€åˆ°çˆ¶çº§
 
-	vm.$emit(ÊÂ¼şÃû,Êı¾İ);
+	vm.$emit(äº‹ä»¶å,æ•°æ®);
 
 	v-on:	@
 --------------------------------------------
-vm.$dispatch(ÊÂ¼şÃû,Êı¾İ)	×Ó¼¶Ïò¸¸¼¶·¢ËÍÊı¾İ
-vm.$broadcast(ÊÂ¼şÃû,Êı¾İ)	¸¸¼¶Ïò×Ó¼¶¹ã²¥Êı¾İ
-	ÅäºÏ: event:{}
+vm.$dispatch(äº‹ä»¶å,æ•°æ®)	å­çº§å‘çˆ¶çº§å‘é€æ•°æ®
+vm.$broadcast(äº‹ä»¶å,æ•°æ®)	çˆ¶çº§å‘å­çº§å¹¿æ’­æ•°æ®
+	é…åˆ: event:{}
 
-	ÔÚvue2.0ÀïÃæÒÑ¾­£¬±¨·ÏÁË
+	åœ¨vue2.0é‡Œé¢å·²ç»ï¼ŒæŠ¥åºŸäº†
 --------------------------------------------
 slot:
-	Î»ÖÃ¡¢²Û¿Ú
-	×÷ÓÃ: Õ¼¸öÎ»ÖÃ
+	ä½ç½®ã€æ§½å£
+	ä½œç”¨: å ä¸ªä½ç½®
 
-	ÀàËÆngÀïÃæ transclude  £¨Ö¸Áî£©
+	ç±»ä¼¼ngé‡Œé¢ transclude  ï¼ˆæŒ‡ä»¤ï¼‰
 --------------------------------------------
-vue-> SPAÓ¦ÓÃ£¬µ¥Ò³ÃæÓ¦ÓÃ
-	vue-resouce	½»»¥
-	vue-router	Â·ÓÉ
+vue-> SPAåº”ç”¨ï¼Œå•é¡µé¢åº”ç”¨
+	vue-resouce	äº¤äº’
+	vue-router	è·¯ç”±
 
-	¸ù¾İ²»Í¬urlµØÖ·£¬³öÏÖ²»Í¬Ğ§¹û
+	æ ¹æ®ä¸åŒurlåœ°å€ï¼Œå‡ºç°ä¸åŒæ•ˆæœ
 
-	ÔÛÉÏ¿Î: 0.7.13
+	å’±ä¸Šè¯¾: 0.7.13
 
-Ö÷Ò³	home
-ĞÂÎÅÒ³	news
+ä¸»é¡µ	home
+æ–°é—»é¡µ	news
 
 
 html:
-	<a v-link="{path:'/home'}">Ö÷Ò³</a>	Ìø×ªÁ´½Ó
-	
-	Õ¹Ê¾ÄÚÈİ:
+	<a v-link="{path:'/home'}">ä¸»é¡µ</a>	è·³è½¬é“¾æ¥
+
+	å±•ç¤ºå†…å®¹:
 	<router-view></router-view>
 js:
-	//1. ×¼±¸Ò»¸ö¸ù×é¼ş
+	//1. å‡†å¤‡ä¸€ä¸ªæ ¹ç»„ä»¶
 	var App=Vue.extend();
 
-	//2. Home News×é¼ş¶¼×¼±¸
+	//2. Home Newsç»„ä»¶éƒ½å‡†å¤‡
 	var Home=Vue.extend({
-		template:'<h3>ÎÒÊÇÖ÷Ò³</h3>'
+		template:'<h3>æˆ‘æ˜¯ä¸»é¡µ</h3>'
 	});
 
 	var News=Vue.extend({
-		template:'<h3>ÎÒÊÇĞÂÎÅ</h3>'
+		template:'<h3>æˆ‘æ˜¯æ–°é—»</h3>'
 	});
 
-	//3. ×¼±¸Â·ÓÉ
+	//3. å‡†å¤‡è·¯ç”±
 	var router=new VueRouter();
 
-	//4. ¹ØÁª
+	//4. å…³è”
 	router.map({
 		'home':{
 			component:Home
@@ -178,53 +180,54 @@ js:
 		}
 	});
 
-	//5. Æô¶¯Â·ÓÉ
+	//5. å¯åŠ¨è·¯ç”±
 	router.start(App,'#box');
 
-Ìø×ª:
+è·³è½¬:
 	router.redirect({
-		¡®/¡¯:'/home'
+		â€˜/â€™:'/home'
 	});
 --------------------------------------
-Â·ÓÉÇ¶Ì×(¶à²ãÂ·ÓÉ):
-	
-	Ö÷Ò³	home
-		µÇÂ¼	home/login
-		×¢²á	home/reg
-	ĞÂÎÅÒ³	news
+è·¯ç”±åµŒå¥—(å¤šå±‚è·¯ç”±):
+
+	ä¸»é¡µ	home
+		ç™»å½•	home/login
+		æ³¨å†Œ	home/reg
+	æ–°é—»é¡µ	news
 
 	subRoutes:{
 		'login':{
 			component:{
-				template:'<strong>ÎÒÊÇµÇÂ¼ĞÅÏ¢</strong>'
+				template:'<strong>æˆ‘æ˜¯ç™»å½•ä¿¡æ¯</strong>'
 			}
 		},
 		'reg':{
 			component:{
-				template:'<strong>ÎÒÊÇ×¢²áĞÅÏ¢</strong>'
+				template:'<strong>æˆ‘æ˜¯æ³¨å†Œä¿¡æ¯</strong>'
 			}
 		}
 	}
-Â·ÓÉÆäËûĞÅÏ¢:
+è·¯ç”±å…¶ä»–ä¿¡æ¯:
 	/detail/:id/age/:age
 
-	{{$route.params | json}}	->  µ±Ç°²ÎÊı
+	{{$route.params | json}}	->  å½“å‰å‚æ•°
 
-	{{$route.path}}	->  µ±Ç°Â·¾¶
-	
-	{{$route.query | json}}	->  Êı¾İ
+	{{$route.path}}	->  å½“å‰è·¯å¾„
+
+	{{$route.query | json}}	->  æ•°æ®
 --------------------------------------------
 vue-loader:
-	ÆäËûloader ->  css-loader¡¢url-loader¡¢html-loader.....
+	å…¶ä»–loader ->  css-loaderã€url-loaderã€html-loader.....
 
-	ºóÌ¨: nodeJs	->  require  exports
-	broserify  Ä£¿é¼ÓÔØ£¬Ö»ÄÜ¼ÓÔØjs
-	webpack   Ä£¿é¼ÓÔØÆ÷£¬ Ò»ÇĞ¶«Î÷¶¼ÊÇÄ£¿é, ×îºó´ò°üµ½Ò»¿éÁË
-
-	require('style.css');	->   css-loader¡¢style-loader
-
+	åå°: nodeJs	->  require  exports
+	broserify  æ¨¡å—åŠ è½½ï¼Œåªèƒ½åŠ è½½js
 	
-	vue-loader»ùÓÚwebpack
+	webpack   æ¨¡å—åŠ è½½å™¨ï¼Œ ä¸€åˆ‡ä¸œè¥¿éƒ½æ˜¯æ¨¡å—, æœ€åæ‰“åŒ…åˆ°ä¸€å—äº†
+
+	require('style.css');	->   css-loaderã€style-loader
+
+
+	vue-loaderåŸºäºwebpack
 
 .css
 .js
@@ -236,46 +239,46 @@ vue-loader:
 a.vue
 b.vue
 
-	.vueÎÄ¼ş:
-		·ÅÖÃµÄÊÇvue×é¼ş´úÂë
+	.vueæ–‡ä»¶:
+		æ”¾ç½®çš„æ˜¯vueç»„ä»¶ä»£ç 
 
 		<template>
 			html
 		</template>
-	
+
 		<style>
 			css
 		</style>
-	
+
 		<script>
-			js	£¨Æ½Ê±´úÂë¡¢ES6£©	babel-loader
+			js	ï¼ˆå¹³æ—¶ä»£ç ã€ES6ï¼‰	babel-loader
 		</script>
 -------------------------------------
-¼òµ¥µÄÄ¿Â¼½á¹¹:
+ç®€å•çš„ç›®å½•ç»“æ„:
 	|-index.html
-	|-main.js	Èë¿ÚÎÄ¼ş
-	|-App.vue	vueÎÄ¼ş£¬¹Ù·½ÍÆ¼öÃüÃû·¨
-	|-package.json	¹¤³ÌÎÄ¼ş(ÏîÄ¿ÒÀÀµ¡¢Ãû³Æ¡¢ÅäÖÃ)
-		npm init --yes Éú³É
-	|-webpack.config.js	webpackÅäÖÃÎÄ¼ş
+	|-main.js	å…¥å£æ–‡ä»¶
+	|-App.vue	vueæ–‡ä»¶ï¼Œå®˜æ–¹æ¨èå‘½åæ³•
+	|-package.json	å·¥ç¨‹æ–‡ä»¶(é¡¹ç›®ä¾èµ–ã€åç§°ã€é…ç½®)
+		npm init --yes ç”Ÿæˆ
+	|-webpack.config.js	webpacké…ç½®æ–‡ä»¶
 
-ES6: Ä£¿é»¯¿ª·¢
-	µ¼³öÄ£¿é£º
+ES6: æ¨¡å—åŒ–å¼€å‘
+	å¯¼å‡ºæ¨¡å—ï¼š
 		export default {}
-	ÒıÈëÄ£¿é:
-		import Ä£¿éÃû from µØÖ·
+	å¼•å…¥æ¨¡å—:
+		import æ¨¡å—å from åœ°å€
 --------------------------------------------
-webpak×¼±¸¹¤×÷:
+webpakå‡†å¤‡å·¥ä½œ:
 	cnpm install webpack --save-dev
 	cnpm install webpack-dev-server --save-dev
 
-	App.vue	-> ±ä³ÉÕı³£´úÂë		vue-loader@8.5.4
+	App.vue	-> å˜æˆæ­£å¸¸ä»£ç 		vue-loader@8.5.4
 	cnpm install vue-loader@8.5.4 --save-dev
 
 	cnpm install vue-html-loader --save-dev
-	
-	vue-html-loader¡¢css-loader¡¢vue-style-loader¡¢
-	vue-hot-reload-api@1.3.2
+
+	vue-html-loaderã€css-loaderã€vue-style-loaderã€ #ä¸»è¦ç”¨æ¥è§£æ xxx.vue æ–‡ä»¶ä¸­çš„ htmlä»£ç å’Œæ ·å¼
+	vue-hot-reload-api@1.3.2   #ä¸»è¦ç”¨æ¥è§£æ xxx.vue æ–‡ä»¶ä¸­çš„ jsä»£ç çš„
 
 	babel-loader
 	babel-core
@@ -283,16 +286,7 @@ webpak×¼±¸¹¤×÷:
 	babel-preset-es2015
 	babel-runtime
 
-×î×îºËĞÄ£º
-	
-
-	
-
-
-
-
-
-		
+æœ€æœ€æ ¸å¿ƒï¼š
 
 
 
@@ -301,12 +295,21 @@ webpak×¼±¸¹¤×÷:
 
 
 
-	
 
 
-   
 
-	
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

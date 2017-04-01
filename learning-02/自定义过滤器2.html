@@ -15,24 +15,22 @@
     </script>
 </head>
 <body>
-    <div id="box">
-        {{a | toDou 1 2}}
-    </div>
-    <script>
-        Vue.filter('toDou',function(input,a,b){
-            alert(a+','+b);
-            return input<10?'0'+input:''+input;
-        });
-        var vm=new Vue({
-            data:{
-                a:9
-            },
-            methods:{
+<div id="box">
+    {{a | toDou 1 2}}
+</div>
+<script>
+    Vue.filter('toDou', function (input, a, b) {
+        alert(a + ',' + b);
+        return input < 10 ? '0' + input : '' + input;
+    });
+    var vm = new Vue({
+        data: {
+            a: 9
+        },
+        methods: {}
+    }).$mount('#box');
 
-            }
-        }).$mount('#box');
-
-    </script>
+</script>
 </body>
 </html>
 

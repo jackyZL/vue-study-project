@@ -12,12 +12,14 @@
 		<aaa></aaa>
 	</div>
 
+	<aaa></aaa>
+
 	<script>
-		var Aaa=Vue.extend({
+		var Aaa=Vue.extend({ // 这里定义的是一个全局组件
 			template:'<h3>我是标题3</h3>'
 		});
 
-		Vue.component('aaa',Aaa);
+		Vue.component('aaa',Aaa);  // 注册全局组件
 		
 		// 下面是组件的另外一种编写方式
 		//Vue.component('aaa',{template:'<h3>我是标题3</h3>'});

@@ -27,14 +27,17 @@
                 a:1
             },
             computed:{
-                b:function(){
+                /*b:function(){
                     //业务逻辑代码
                     return 2;
+                }*/
+                b(){  // es6 的写法
+                    return 3;
                 }
             }
         });
 
-        console.log(vm.a);
+        console.log(vm.b);
     </script>
 </body>
 </html>

@@ -13,7 +13,7 @@
 	</div>
 
 	<script>
-		var Aaa=Vue.extend({
+		var Aaa=Vue.extend({ // 定义组件
 			data(){
 				return {
 					msg:'我是标题^^'
@@ -34,7 +34,10 @@
 			el:'#box',
 			data:{
 				bSign:true
-			}
+			}/*,
+			components:{
+				aaa:Aaa
+			}*/
 		});
 
 	</script>

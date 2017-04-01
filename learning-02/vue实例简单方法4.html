@@ -24,7 +24,7 @@
 
         var vm=new Vue({
             aa:11, //自定义属性,
-            show:function(){
+            show:function(){  //自定义属性,
                 alert(1);
             },
             data:{
@@ -32,7 +32,7 @@
             }
         }).$mount('#box');
 
-        vm.$options.show();
+        vm.$options.show();  //通过$options来访问自定义属性
         console.log(vm.$options.aa);
     </script>
 </body>

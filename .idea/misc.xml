@@ -20,10 +20,13 @@
       </profile>
     </annotationProcessing>
   </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="ES6" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="F:/java/javatools/apache/maven-3.0.5" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../javatools/apache/maven-3.0.5" />
       </MavenGeneralSettings>
     </option>
   </component>
