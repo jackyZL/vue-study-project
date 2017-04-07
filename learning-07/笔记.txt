@@ -106,6 +106,7 @@ mint-ui
 
 	按需引入:
 	import { Cell, Checklist } from 'minu-ui';
+	import 'mint-ui/lib/style.css'
 	Vue.component(Cell.name, Cell);
 	Vue.component(Checklist.name, Checklist);
 
