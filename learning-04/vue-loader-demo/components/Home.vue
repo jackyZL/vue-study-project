@@ -8,7 +8,7 @@
 		<router-view></router-view>
 	</div>
 </template>
-<style scope>
+<style scope>  /*scope 局部的，表示只有它能用*/
 	.box{
 		border:1px dashed #000;
 	}

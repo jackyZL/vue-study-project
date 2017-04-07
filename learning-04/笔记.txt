@@ -78,7 +78,7 @@ home	news
 1. npm install vue-cli -g	安装 vue命令环境
 	验证安装ok?
 		vue --version
-2. 生成项目模板
+2. 生成项目模板         注意，如果是想要使用vue1.x，需要这样带‘#版本’。如 vue init webpack#1.0 vue-webpack-demo
 	vue init <模板名> 本地文件夹名称
 3. 进入到生成目录里面
 	cd xxx

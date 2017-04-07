@@ -3,8 +3,8 @@ import VueRouter from 'vue-router'
 import App from './App.vue'
 import routerConfig from './router.config.js'
 
+// 使用VueRouter
 Vue.use(VueRouter);
-
 
 //配置路由
 const router=new VueRouter();
