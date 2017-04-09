@@ -8,19 +8,22 @@
 
     <div>
       现在数字为: {{count}}, 它现在是 {{getOdd}}
+
+      <!-- 也可以这样取： {{$store.state.count}}  -->
+
     </div>
   </div>
 </template>
 
 <script>
-  import {mapGetters, mapActions} from 'vuex'
+  import {mapGetters, mapActions} from 'vuex'  /* ES6 语法 */
 
   export default{
-    computed:mapGetters([
+    computed:mapGetters([  /* 获取属性值 */
       'count',
       'getOdd'
     ]),
-    methods:mapActions([
+    methods:mapActions([  /* 管理事件 */
       'increment',
       'decrement',
       'clickOdd',
@@ -30,30 +33,5 @@
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

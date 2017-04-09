@@ -30,7 +30,7 @@
 			this.footerChange(path);
 		},
 		watch:{
-			$route(to){
+			$route(to){    //当路由发生变化的时候触发
 				var path=to.path.substring(1);
 				this.headerChange(path);
 				this.footerChange(path);

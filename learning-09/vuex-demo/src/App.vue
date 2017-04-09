@@ -13,14 +13,14 @@
 </template>
 
 <script>
-  import {mapGetters, mapActions} from 'vuex'
+  import {mapGetters, mapActions} from 'vuex'  /*  这是ES6的语法 */
 
   export default{
     computed:mapGetters([
       'count',
       'getOdd'
     ]),
-    methods:mapActions([
+    methods:mapActions([  // 他来管理事件
       'increment',
       'decrement',
       'clickOdd',
@@ -39,21 +39,4 @@
   margin-top: 60px;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>

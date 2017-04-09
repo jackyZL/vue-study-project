@@ -1,0 +1,12 @@
+vuex : 集中式管理数据
+    http:// vuex.vuels.org/
+
+vuex提供了两个非常靠谱的方法：
+
+    mapActions  管理所有事件(行为)
+    mapGetters  获取数据
+
+cnpm install vuex -D
+
+
+

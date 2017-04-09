@@ -1,4 +1,4 @@
-import * as types from './types'
+import * as types from './types'  /* es6 语法 */
 
 export default {
 	increment: ({
@@ -15,7 +15,7 @@ export default {
 		commit,
 		state
 	}) => {
-		if (state.mutations.count % 2 == 0) {
+		if (state.mutations.count % 2 == 0) {  // 注意： 这里需要在state的mutations 中去取count，不是直接取。
 			commit(types.INCREMENT);
 		}
 	},

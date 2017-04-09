@@ -1,0 +1,41 @@
+vue仿手机新闻网站
+
+做项目的基本流程：
+1 规划组件的结构
+    Nav.vue
+    Head.vue
+    Home.vue
+    ...
+
+2 编写对应的路由
+    vue-router
+
+3 具体写每一个组件的功能
+
+建议：
+    一些公共的文件jquery,jquery插件等等，一般都在index.html文件引入
+    当然也可以在main.js   rquire/import
+
+重新捋一捋：
+    |- asset
+
+--------------------------------------------------
+watch:{
+    $route(to,from){  //当路由发生变化的时候出发
+        if(to.path=='/user-info'){
+            this.$store.dispatch('hideHeader');
+        }else{
+            this.$store.dispatch('showHeader');
+        }
+    }
+}
+
+-------------------------------------------------
+
+axios 的一些配置
+
+
+
+
+
+

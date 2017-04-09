@@ -9,7 +9,7 @@ const state = {
 };
 
 const mutations = {
-	[INCREMENT](state) {
+	[INCREMENT](state) {  /* INCREMENT 是一个import的变量，需要用方括号括起来，才能使用 */
 		state.count++;
 	},
 	[DECREMENT](state) {
